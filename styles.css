@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #184A45; /* Lafayette Green */
+    color: #FAF3E0; /* Warm White */
+}
+
+header {
+    background-color: #133D39;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FAF3E0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #FAF3E0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1C564D;
+}
+
+.content {
+    padding: 50px 20px;
+    background-color: #184A45;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #133D39;
+}
