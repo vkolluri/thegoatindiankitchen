@@ -1,52 +1,106 @@
-/* styles.css */
-body {
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #184A45; /* Lafayette Green */
-    color: #FAF3E0; /* Warm White */
+    color: black;
 }
 
+/* Colors */
+:root {
+    --lafayette-green: #3A5A40;
+    --warm-white: #FAF8EF;
+    --black: #000000;
+}
+
+/* Header */
 header {
-    background-color: #133D39;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--black);
+    color: var(--lafayette-green);
+    padding: 1rem;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FAF3E0;
+header h1 {
+    text-align: center;
+    color: var(--lafayette-green);
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    list-style: none;
 }
 
 nav ul li a {
-    color: #FAF3E0;
+    color: var(--lafayette-green);
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 1rem;
 }
 
-.hero {
+/* Hero Section */
+#hero {
+    background: var(--lafayette-green) url('path-to-image.jpg') center/cover no-repeat;
+    color: var(--warm-white);
+    padding: 2rem;
     text-align: center;
-    padding: 100px 20px;
-    background-color: #1C564D;
 }
 
-.content {
-    padding: 50px 20px;
-    background-color: #184A45;
+#hero h2 {
+    font-size: 2.5rem;
 }
 
+/* About Section */
+#about {
+    background-color: var(--warm-white);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Menu Section */
+#menu {
+    background-color: var(--warm-white);
+    padding: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: var(--warm-white);
+    border: 1px solid var(--lafayette-green);
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+/* CTA Section */
+#cta {
+    background-color: var(--lafayette-green);
+    padding: 2rem;
+    text-align: center;
+}
+
+#cta button {
+    background-color: var(--warm-white);
+    color: var(--lafayette-green);
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
+    background-color: var(--black);
+    color: var(--warm-white);
+    padding: 1rem;
     text-align: center;
-    padding: 20px;
-    background-color: #133D39;
 }
