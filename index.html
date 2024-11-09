@@ -3,63 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The G.O.A.T Indian Kitchen</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The G.O.A.T Indian Kitchen Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF8EF; /* warm white */
+            color: #333;
+        }
+        h1, h2 {
+            color: #3A5A40; /* Lafayette green */
+            text-align: center;
+            margin: 20px 0;
+        }
+        .menu-section {
+            margin: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #3A5A40; /* Lafayette green */
+        }
+        .menu-item p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .price {
+            font-size: 1em;
+            color: #000;
+        }
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .price {
+                margin-top: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
-        <nav>
-            <h1>The G.O.A.T Indian Kitchen</h1>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>The G.O.A.T Indian Kitchen</h1>
+        <h2>Menu</h2>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Authentic Indian Cuisine in Etobicoke</h2>
-            <p>Experience the best of Indian flavors near Humber College!</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>The G.O.A.T Indian Kitchen offers a variety of authentic Indian dishes with a modern twist, perfect for students and families alike.</p>
-    </section>
-
     <!-- Menu Section -->
-    <section id="menu">
-        <h2>Menu Highlights</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <h3>Butter Chicken</h3>
-                <p>A classic favorite with rich, creamy sauce.</p>
+    <div class="menu-section">
+        <h2>Starters</h2>
+        <div class="menu-item">
+            <div>
+                <h3>Vegetable Samosa</h3>
+                <p>Crispy pastry stuffed with spiced potatoes and peas.</p>
             </div>
-            <div class="menu-item">
-                <h3>Tandoori Chicken</h3>
-                <p>Marinated with spices and cooked to perfection.</p>
-            </div>
-            <!-- Add more menu items as needed -->
+            <span class="price">$4.99</span>
         </div>
-    </section>
+        <div class="menu-item">
+            <div>
+                <h3>Chicken Tikka</h3>
+                <p>Juicy chicken marinated in spices and grilled to perfection.</p>
+            </div>
+            <span class="price">$7.99</span>
+        </div>
+    </div>
 
-    <!-- Call-to-Action Section -->
-    <section id="cta">
-        <button class="order-now">Order Now</button>
-        <button class="reserve-table">Reserve a Table</button>
-    </section>
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+            <div>
+                <h3>Butter Chicken</h3>
+                <p>Rich and creamy tomato-based chicken curry.</p>
+            </div>
+            <span class="price">$12.99</span>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h3>Palak Paneer</h3>
+                <p>Spinach and paneer curry with a hint of spice.</p>
+            </div>
+            <span class="price">$10.99</span>
+        </div>
+    </div>
 
-    <!-- Footer Section -->
-    <footer id="contact">
-        <p>Address: #3, 130 Westmore Drive, Etobicoke, ON M9V 5E2</p>
-        <p>Phone: 647-726-4264</p>
-        <p>Follow us on social media!</p>
-    </footer>
+    <div class="menu-section">
+        <h2>Breads & Rice</h2>
+        <div class="menu-item">
+            <div>
+                <h3>Naan</h3>
+                <p>Traditional Indian flatbread baked in a tandoor.</p>
+            </div>
+            <span class="price">$1.99</span>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h3>Steamed Basmati Rice</h3>
+                <p>Fluffy steamed rice.</p>
+            </div>
+            <span class="price">$2.99</span>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+            <div>
+                <h3>Mango Lassi</h3>
+                <p>Sweet mango yogurt drink.</p>
+            </div>
+            <span class="price">$3.99</span>
+        </div>
+        <div class="menu-item">
+            <div>
+                <h3>Masala Chai</h3>
+                <p>Traditional spiced tea with milk.</p>
+            </div>
+            <span class="price">$2.99</span>
+        </div>
+    </div>
+
 </body>
 </html>
